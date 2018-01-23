@@ -24,6 +24,8 @@ CPPFLAGS = -Wno-sign-compare
 
 # Cardview Dir
 cardview_dir := ../../../frameworks/support/v7/cardview
+# Chips Dir
+chips_dir := ../../../frameworks/opt/chips/res
 
 src_dirs := src src_bypass
 res_dirs := res $(chips_dir) $(cardview_dir)/res
@@ -35,7 +37,7 @@ LOCAL_AAPT_FLAGS := \
 	--auto-add-overlay \
 	--extra-packages android.support.v7.cardview
 
-LOCAL_PACKAGE_NAME := NitrogenOTA
+LOCAL_PACKAGE_NAME := aosOTA
 
 LOCAL_MODULE_TAGS := optional
 

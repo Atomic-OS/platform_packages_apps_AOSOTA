@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.utils;
+package com.aos.ota.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -39,11 +39,11 @@ import android.support.v4.app.NotificationCompat.Builder;
 import android.support.v4.app.TaskStackBuilder;
 import android.util.Log;
 
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.RomUpdate;
-import com.nitrogen.ota.activities.AvailableActivity;
-import com.nitrogen.ota.activities.MainActivity;
-import com.nitrogen.ota.receivers.AppReceiver;
+import com.aos.ota.R;
+import com.aos.ota.RomUpdate;
+import com.aos.ota.activities.AvailableActivity;
+import com.aos.ota.activities.MainActivity;
+import com.aos.ota.receivers.AppReceiver;
 
 public class Utils implements Constants{
 

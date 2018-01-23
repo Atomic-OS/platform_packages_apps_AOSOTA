@@ -1,7 +1,7 @@
-package com.nitrogen.ota.download;
+package com.aos.ota.download;
 
-import com.nitrogen.ota.activities.AddonActivity;
-import com.nitrogen.ota.utils.Constants;
+import com.aos.ota.activities.AddonActivity;
+import com.aos.ota.utils.Constants;
 import android.app.DownloadManager;
 import android.content.Context;
 import android.database.Cursor;

@@ -1,4 +1,4 @@
-package com.nitrogen.ota;
+package com.aos.ota;
 
 public class Addon {
 	

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.tasks;
+package com.aos.ota.tasks;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -29,9 +29,9 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Utils;
+import com.aos.ota.R;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Utils;
 
 public  class LoadUpdateManifest extends AsyncTask<Void, Void, Void> implements Constants {
     

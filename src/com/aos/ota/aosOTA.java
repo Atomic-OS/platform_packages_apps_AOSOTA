@@ -1,4 +1,4 @@
-package com.nitrogen.ota;
+package com.aos.ota;
 
 import java.util.Set;
 
@@ -6,16 +6,16 @@ import android.app.Application;
 import android.support.v4.util.ArrayMap;
 import android.util.Log;
 
-public class NitrogenOTA extends Application {
+public class aosOTA extends Application {
 	private static ArrayMap<Integer, Long> mAddonsDownloads = new ArrayMap<Integer, Long>();
 	
 	public static void putAddonDownload(int key, long value) {
-		Log.d("NitrogenOTA", "Putting Addon with Key: " + key + " and Value: " + value);
+		Log.d("aosOTA", "Putting Addon with Key: " + key + " and Value: " + value);
 		mAddonsDownloads.put(key, value);
 	}
 	
 	public static long getAddonDownload(int key) {
-		Log.d("NitrogenOTA", "Getting Addon with Key: " + key);
+		Log.d("aosOTA", "Getting Addon with Key: " + key);
 		return (Long) mAddonsDownloads.get(key);
 	}
 	

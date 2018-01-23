@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.activities;
+package com.aos.ota.activities;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -31,10 +31,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.tasks.Changelog;
-import com.nitrogen.ota.utils.Preferences;
-import com.nitrogen.ota.utils.Utils;
+import com.aos.ota.R;
+import com.aos.ota.tasks.Changelog;
+import com.aos.ota.utils.Preferences;
+import com.aos.ota.utils.Utils;
 
 public class AboutActivity extends Activity {
 

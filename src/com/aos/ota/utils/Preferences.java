@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.utils;
+package com.aos.ota.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
-import com.nitrogen.ota.R;
+import com.aos.ota.R;
 
 public class Preferences implements Constants{
 
 	public static final String TAG = "Preferences";
 
-	public static String PREF_NAME = "NitrogenOTASettings";
+	public static String PREF_NAME = "aosOTASettings";
 
 	private Preferences() {
 	}

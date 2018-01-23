@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.download;
+package com.aos.ota.download;
 
 import java.io.File;
 
@@ -22,11 +22,11 @@ import android.app.DownloadManager;
 import android.content.Context;
 import android.net.Uri;
 
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.RomUpdate;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Preferences;
-import com.nitrogen.ota.utils.Utils;
+import com.aos.ota.R;
+import com.aos.ota.RomUpdate;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Preferences;
+import com.aos.ota.utils.Utils;
 
 public class DownloadRom implements Constants {
 	

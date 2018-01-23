@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.download;
+package com.aos.ota.download;
 
 import android.app.Activity;
 import android.app.DownloadManager;
@@ -24,10 +24,10 @@ import android.database.CursorIndexOutOfBoundsException;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.nitrogen.ota.activities.AvailableActivity;
-import com.nitrogen.ota.activities.MainActivity;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Preferences;
+import com.aos.ota.activities.AvailableActivity;
+import com.aos.ota.activities.MainActivity;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Preferences;
 
 public class DownloadRomProgress  extends AsyncTask<Long, Integer, Void> implements Constants {
 	

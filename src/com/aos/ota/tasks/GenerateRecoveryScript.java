@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.tasks;
+package com.aos.ota.tasks;
 
 import java.io.File;
 import android.app.ProgressDialog;
@@ -22,11 +22,11 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.RomUpdate;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Preferences;
-import com.nitrogen.ota.utils.Tools;
+import com.aos.ota.R;
+import com.aos.ota.RomUpdate;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Preferences;
+import com.aos.ota.utils.Tools;
 
 public class GenerateRecoveryScript extends AsyncTask<Void, String, Boolean> implements Constants {
 

@@ -1,13 +1,13 @@
-package com.nitrogen.ota.download;
+package com.aos.ota.download;
 
 import android.app.DownloadManager;
 import android.content.Context;
 import android.net.Uri;
 import android.util.Log;
 
-import com.nitrogen.ota.NitrogenOTA;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Preferences;
+import com.aos.ota.aosOTA;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Preferences;
 
 public class DownloadAddon implements Constants {
 
@@ -35,7 +35,7 @@ public class DownloadAddon implements Constants {
 		
 		DownloadManager downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
 		long mDownloadID = downloadManager.enqueue(request);
-		NitrogenOTA.putAddonDownload(index, mDownloadID);
+		aosOTA.putAddonDownload(index, mDownloadID);
 		new DownloadAddonProgress(context, downloadManager, index).execute(mDownloadID);
 		if (DEBUGGING) {
 			Log.d(TAG, "Starting download with manager ID " + mDownloadID + " and item id of " + id);
@@ -43,7 +43,7 @@ public class DownloadAddon implements Constants {
 	}
 	
 	public void cancelDownload(Context context, int index) {
-		long mDownloadID = NitrogenOTA.getAddonDownload(index);
+		long mDownloadID = aosOTA.getAddonDownload(index);
 		if (DEBUGGING) {
 			Log.d(TAG, "Stopping download with manager ID " + mDownloadID + " and item index of " + index);
 		}

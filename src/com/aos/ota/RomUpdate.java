@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota;
+package com.aos.ota;
 
 
 import java.io.File;
@@ -22,7 +22,7 @@ import java.io.File;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.nitrogen.ota.utils.Constants;
+import com.aos.ota.utils.Constants;
 
 public class RomUpdate implements Constants {
     

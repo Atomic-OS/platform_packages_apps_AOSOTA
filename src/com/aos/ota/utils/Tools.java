@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.utils;
+package com.aos.ota.utils;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

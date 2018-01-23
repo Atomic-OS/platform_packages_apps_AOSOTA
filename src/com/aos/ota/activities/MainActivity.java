@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.activities;
+package com.aos.ota.activities;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -50,13 +50,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.RomUpdate;
-import com.nitrogen.ota.tasks.Changelog;
-import com.nitrogen.ota.tasks.LoadUpdateManifest;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Preferences;
-import com.nitrogen.ota.utils.Utils;
+import com.aos.ota.R;
+import com.aos.ota.RomUpdate;
+import com.aos.ota.tasks.Changelog;
+import com.aos.ota.tasks.LoadUpdateManifest;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Preferences;
+import com.aos.ota.utils.Utils;
 
 public class MainActivity extends Activity implements Constants{
 

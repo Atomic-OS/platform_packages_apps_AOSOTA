@@ -1,4 +1,4 @@
-package com.nitrogen.ota.activities;
+package com.aos.ota.activities;
 
 import in.uncod.android.bypass.Bypass;
 
@@ -36,14 +36,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
-import com.nitrogen.ota.Addon;
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.RomUpdate;
-import com.nitrogen.ota.download.DownloadAddon;
-import com.nitrogen.ota.tasks.AddonXmlParser;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Preferences;
-import com.nitrogen.ota.utils.Utils;
+import com.aos.ota.Addon;
+import com.aos.ota.R;
+import com.aos.ota.RomUpdate;
+import com.aos.ota.download.DownloadAddon;
+import com.aos.ota.tasks.AddonXmlParser;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Preferences;
+import com.aos.ota.utils.Utils;
 
 public class AddonActivity extends Activity implements Constants {
 

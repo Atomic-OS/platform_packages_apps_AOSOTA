@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.receivers;
+package com.aos.ota.receivers;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -32,15 +32,15 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationCompat.Builder;
 import android.util.Log;
 
-import com.nitrogen.ota.NitrogenOTA;
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.RomUpdate;
-import com.nitrogen.ota.activities.AddonActivity;
-import com.nitrogen.ota.activities.AvailableActivity;
-import com.nitrogen.ota.tasks.LoadUpdateManifest;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Preferences;
-import com.nitrogen.ota.utils.Utils;
+import com.aos.ota.aosOTA;
+import com.aos.ota.R;
+import com.aos.ota.RomUpdate;
+import com.aos.ota.activities.AddonActivity;
+import com.aos.ota.activities.AvailableActivity;
+import com.aos.ota.tasks.LoadUpdateManifest;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Preferences;
+import com.aos.ota.utils.Utils;
 
 public class AppReceiver extends BroadcastReceiver implements Constants{
 
@@ -57,12 +57,12 @@ public class AppReceiver extends BroadcastReceiver implements Constants{
 			boolean isAddonDownload = false;
 			int keyForAddonDownload = 0;
 
-			Set<Integer> set = NitrogenOTA.getAddonDownloadKeySet();
+			Set<Integer> set = aosOTA.getAddonDownloadKeySet();
 			Iterator<Integer> iterator = set.iterator();
 
 			while (iterator.hasNext() && isAddonDownload != true) {
 				int nextValue = iterator.next();
-				if (id == NitrogenOTA.getAddonDownload(nextValue)) {
+				if (id == aosOTA.getAddonDownload(nextValue)) {
 					isAddonDownload = true;
 					keyForAddonDownload = nextValue;
 					if (DEBUGGING) {
@@ -89,7 +89,7 @@ public class AppReceiver extends BroadcastReceiver implements Constants{
 					if (DEBUGGING)
 						Log.w(TAG, "Download Failed");
 					Log.d(TAG, "Removing Addon download with id " + keyForAddonDownload);
-					NitrogenOTA.removeAddonDownload(keyForAddonDownload);
+					aosOTA.removeAddonDownload(keyForAddonDownload);
 					AddonActivity.AddonsArrayAdapter.updateProgress(keyForAddonDownload, 0, true);
 					AddonActivity.AddonsArrayAdapter.updateButtons(keyForAddonDownload, false);
 					return;
@@ -97,7 +97,7 @@ public class AppReceiver extends BroadcastReceiver implements Constants{
 					if (DEBUGGING)
 						Log.v(TAG, "Download Succeeded");
 					Log.d(TAG, "Removing Addon download with id " + keyForAddonDownload);
-					NitrogenOTA.removeAddonDownload(keyForAddonDownload);
+					aosOTA.removeAddonDownload(keyForAddonDownload);
 					AddonActivity.AddonsArrayAdapter.updateButtons(keyForAddonDownload, true);
 					return;
 				}

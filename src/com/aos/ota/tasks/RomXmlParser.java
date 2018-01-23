@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.tasks;
+package com.aos.ota.tasks;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,9 +32,9 @@ import org.xml.sax.helpers.DefaultHandler;
 import android.content.Context;
 import android.util.Log;
 
-import com.nitrogen.ota.RomUpdate;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Utils;
+import com.aos.ota.RomUpdate;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Utils;
 
 public class RomXmlParser extends DefaultHandler implements Constants {
 

@@ -1,4 +1,4 @@
-package com.nitrogen.ota.tasks;
+package com.aos.ota.tasks;
 
 import java.util.ArrayList;
 
@@ -8,8 +8,8 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import android.util.Log;
 
-import com.nitrogen.ota.Addon;
-import com.nitrogen.ota.utils.Constants;
+import com.aos.ota.Addon;
+import com.aos.ota.utils.Constants;
 
 public class AddonsSaxHandler extends DefaultHandler implements Constants {
 	

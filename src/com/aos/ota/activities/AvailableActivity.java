@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.activities;
+package com.aos.ota.activities;
 
 import in.uncod.android.bypass.Bypass;
 import android.annotation.SuppressLint;
@@ -42,15 +42,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.RomUpdate;
-import com.nitrogen.ota.download.DownloadRom;
-import com.nitrogen.ota.download.DownloadRomProgress;
-import com.nitrogen.ota.tasks.GenerateRecoveryScript;
-import com.nitrogen.ota.utils.Constants;
-import com.nitrogen.ota.utils.Preferences;
-import com.nitrogen.ota.utils.Tools;
-import com.nitrogen.ota.utils.Utils;
+import com.aos.ota.R;
+import com.aos.ota.RomUpdate;
+import com.aos.ota.download.DownloadRom;
+import com.aos.ota.download.DownloadRomProgress;
+import com.aos.ota.tasks.GenerateRecoveryScript;
+import com.aos.ota.utils.Constants;
+import com.aos.ota.utils.Preferences;
+import com.aos.ota.utils.Tools;
+import com.aos.ota.utils.Utils;
 
 public class AvailableActivity extends Activity implements Constants, android.view.View.OnClickListener {
 
