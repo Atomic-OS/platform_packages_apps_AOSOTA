@@ -32,7 +32,7 @@ public interface Constants {
 	
 	// Storage
 	public static final String SD_CARD 									= Environment.getExternalStorageDirectory().getAbsolutePath();
-	public static final String OTA_DOWNLOAD_DIR 						= Utils.doesPropExist(OTA_DOWNLOAD_LOC) ? Utils.getProp(OTA_DOWNLOAD_LOC) : "NitrogenOTA";
+	public static final String OTA_DOWNLOAD_DIR 						= Utils.doesPropExist(OTA_DOWNLOAD_LOC) ? Utils.getProp(OTA_DOWNLOAD_LOC) : "AtomicOTA";
 	public static final String INSTALL_AFTER_FLASH_DIR 					= "InstallAfterFlash";
 
 	// Networks
